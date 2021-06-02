@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>사이트 제목</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="./resources/css/common.css" media="all" />
+<link rel="stylesheet" href="./resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="./resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="./resources/js/lib/jquery-migrate-1.3.0.min.js"></script>
+<script src="./resources/js/plugins.js"></script>
+<script src="./resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5Shiv.js"></script>
+<![endif]-->
+</head>
+<style>
+.box {padding: 30px;}
+.box h1 {margin-bottom: 20px;color: #666; border-bottom:4px solid #f1f1f1;}
+.ani_shake li {float:left;}
+.ani_shake li i {display: block;transform-origin: center -20px;}
+.ani_shake li + li {padding-left: 20px;}
+.ani_shake li.sh1 i {animation: swing1 ease-in-out 1s infinite alternate;}
+.ani_shake li.sh2 i {animation: swing2 ease-in-out 1.2s infinite alternate;}
+.ani_shake li.sh3 i {animation: swing3 ease-in-out 0.8s infinite alternate;}
+
+.btn_area {width: 400px;height:200px;position: relative;}
+.btn_area a {display: block;;position: absolute;top:50%;margin-top: -15px;left:0;writing-mode: vertical-lr;height: 100px; width: 50px; text-align: center;cursor:pointer}
+.btn_area a.btn_next {right:0;left:auto}
+.btn_area a.btn_prev {transform:rotate(180deg)}
+.btn_area a span {background: #fff;display: block;position: absolute;top:0;left:2px; width: 50px; height: 100px; z-index: 10;line-height: 80px;display: none;}
+.btn_area a span em {opacity: 0;transition: all 0.2s ease-in-out;}
+.btn_area a i {display: none;height:100%;width: 50px;border:3px solid #000;position: absolute;right:-5px;top:0;transition: all 0.6s ease-in-out;}
+.btn_area a.on i {border-radius:45%;right:-25px;}
+.btn_area a.on span em{opacity: 1;}
+@-webkit-keyframes swing1 {
+    0% { transform: rotate(3deg);}
+    100% { transform: rotate(-3deg); }
+}
+@keyframes swing1 {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+@-webkit-keyframes swing2 {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+@keyframes swing2 {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+@-webkit-keyframes swing3 {
+    0% { transform: rotate(4deg); }
+    100% { transform: rotate(-4deg); }
+}
+@keyframes swing3 {
+    0% { transform: rotate(4deg); }
+    100% { transform: rotate(-4deg); }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+</style>
+<body style="background: #fff;">
+    <div class="box">
+        <ul class="ani_shake">
+            <li class="sh1"><i><img src="/resources/images/img1.JPG" alt=""></i></li>
+            <li class="sh2"><i><img src="/resources/images/img2.JPG" alt=""></i></li>
+            <li class="sh3"><i><img src="/resources/images/img3.JPG" alt=""></i></li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="btn_area">
+            <a class="btn_prev"><span><em>PREV</em></span><i></i></a>
+            <a class="btn_next"><span><em>NEXT</em></span><i></i>
+                <svg width="36" height="85" xmlns="http://www.w3.org/2000/svg" class="line">
+                <path d="M0 0 Q 0 42 0 83" stroke="black" fill="transparent" style="transition:ease-in 0.5s"/>
+                </svg>
+            </a>
+        </div>
+        
+        
+    </div>
+    <div class="box">
+        <h1>checkbox, radio</h1>
+        <label class="checkbox">
+            <input type="checkbox">
+            <i></i>
+            <span class="lbl">오늘은 그만보기</span>
+        </label>
+        <br>
+        <label class="radio">
+            <input type="radio">
+            <i></i>
+            <span class="lbl">오늘은 그만보기</span>
+        </label>
+    </div>
+    <div class="box">
+        <h1>input</h1>
+        <input type="text" class="input w_100">
+        <input type="text" class="input w_100" disabled="disabled">
+    </div>
+    <div class="box">
+        <h1>button</h1>
+        <button type="button" class="button w_100">버튼1</button><br><br>
+        <a href="#" class="button btn_pk_white">버튼2</a><br><br>
+        <a href="#" class="button btn_white">버튼3</a>
+    </div>
+    <div class="box">
+        <h1>select</h1>
+        <select name="" id="" class="select">
+            <option value="">직접입력</option>
+            <option value="">naver.com</option>
+            <option value="">daum.net</option>
+        </select>
+    </div>
+    <div class="inner">
+        <section class="contents">
+            <h1>장바구니</h1>
+            <div class="cont_in">
+                <h2>중제목</h2>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('.btn_area a').mouseover(function(){
+            $(this).addClass('on')
+        })
+        $('.btn_area a').mouseleave(function(){
+            $(this).removeClass('on')
+        })
+        $('.line').mouseover(function(){
+            $(this).find('path').attr('d','M0 0 Q 34 42 0 83')
+        })
+        $('.line').mouseleave(function(){
+            $(this).find('path').attr('d','M0 0 Q 0 42 0 83')
+        })
+    })
+</script>
+</html>

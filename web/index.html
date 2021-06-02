@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>60chicken</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="./resources/css/common.css" media="all" />
+<link rel="stylesheet" href="./resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="./resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="./resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="./resources/js/lib/jquery-migrate-1.3.0.min.js"></script>
+<script src="./resources/js/plugins.js"></script>
+<script src="./resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5Shiv.js"></script>
+<![endif]-->
+</head>
+<body class="main">
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#container">본문 바로가기</a>
+            <a href="#gnb">주메뉴 바로가기</a>
+            <a href="#footer">사이트 정보 바로가기</a>
+        </div>
+        <header id="header">
+          <div class="hd_inner">
+            <div class="head_top">
+              <ul>
+                <!-- 로그인시 -->
+                <li><a href="./page/mypageOrder.html">마이페이지</a></li>
+                <li><a href="#">로그아웃</a></li>
+                <!-- 로그인 아닐시 -->
+                <!-- <li><a href="./page/join1.html">회원가입</a></li>
+                <li><a href="./page/login.html">로그인</a></li> -->
+              </ul>
+              <div class="main_user_info">
+                <div class="user_name"><strong>홍길동 고객님 </strong>반갑습니다.</div>
+                <div class="user_addr"><a href="./page/mypageDelivery.html">서울특별시 은평구 증산로 251</a></div>
+              </div>
+            </div>
+            <h1 id="logo"><a href="/"><img src="./resources/images/common/logo.png" alt="60계치킨 로고"></a></h1>
+            <nav id="gnb">
+              <ul>
+                <li><a href="./page/menuList.html"><span>메뉴</span></a>
+                  <ul>
+                    <li><a href="">메뉴명</a></li>
+                    <li><a href="">세트메뉴</a></li>
+                    <li><a href="">사이드</a></li>
+                    <li><a href="">음료</a></li>
+                  </ul>
+                </li>
+                <li><a href="./page/mypageCoupon.html"><span>E쿠폰 주문</span></a>
+                  <ul>
+                    <li><a href="./page/mypageCoupon.html">E쿠폰 주문</a></li>
+                  </ul>
+                </li>
+                <li><a href="./page/store.html"><span>스토어</span></a>
+                  <ul>
+                    <li><a href="./page/store.html">매장찾기</a></li>
+                  </ul>
+                </li>
+                <li><a href="./page/eventList.html"><span>프로모션</span></a>
+                  <ul>
+                    <li><a href="./page/eventList.html">프로모션</a></li>
+                  </ul>
+                </li>
+                <li><a href="./page/noticeList.html"><span>커뮤니케이션</span></a>
+                  <ul>
+                    <li><a href="./page/noticeList.html">공지사항</a></li>
+                    <li><a href="./page/newsList.html">News</a></li>
+                    <li><a href="./page/faq.html">FAQ</a></li>
+                    <li><a href="./page/mypageQnaWrite.html">문의하기</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <a href="./page/cart.html" class="btn_cart"><span class="blind">장바구니</span><i>10</i></a>
+          </div>
+        </header>
+        <div id="container">
+          <div class="main_bg_white">
+            <div class="main_banner_wrap">
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><span class="img"><img src="./resources/images/contents/@img_main_banner.jpg" alt="메인배너이미지"></span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="img"><img src="./resources/images/contents/@img_main_banner.jpg" alt="메인배너이미지"></span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="img"><img src="./resources/images/contents/@img_main_banner.jpg" alt="메인배너이미지"></span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="img"><img src="./resources/images/contents/@img_main_banner.jpg" alt="메인배너이미지"></span></a></div>
+                  </div>
+                  <div class="control">
+                      <button type="button" class="btn_prev"><span class="blind">메인배너 이전배너</span></button>
+                      <span>
+                          <span class="pagination"></span>
+                          <button type="button" class="btn_stop" title="자동롤링 정지"><i class="fa fa-pause"></i><span class="blind">메인배너 자동롤링 정지</span></button>
+                          <button type="button" class="btn_play" title="자동롤링 시작" style="display:none"><i class="fa fa-play"></i><span class="blind">메인배너 자동롤링 시작</span></button>
+                      </span>
+                      <button type="button" class="btn_next"><span class="blind">메인배너 다음배너</span></button>
+						      </div>
+              </div>
+              <ul class="ladles">
+                <li class="ladle01"><img src="./resources/images/contents/ladle_1.png" alt="배경 국자"></li>
+                <li class="ladle02"><img src="./resources/images/contents/ladle_2.png" alt="배경 국자"></li>
+                <li class="ladle03"><img src="./resources/images/contents/ladle_3.png" alt="배경 국자"></li>
+                <li class="ladle04"><img src="./resources/images/contents/ladle_4.png" alt="배경 국자"></li>
+                <li class="ladle05"><img src="./resources/images/contents/ladle_5.png" alt="배경 국자"></li>
+                <li class="ladle06"><img src="./resources/images/contents/ladle_6.png" alt="배경 국자"></li>
+              </ul>
+            </div>
+            <div class="inner">
+              <div class="main_menu_wrap">
+                <div class="tab_area">
+                  <ul>
+                    <li class="on"><button type="button">신제품</button></li>
+                    <li><button type="button">치킨</button></li>
+                    <li><button type="button">세트</button></li>
+                  </ul>
+                </div>
+                <div class="menu_area">
+                  <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                              <span class="menu_img"><img src="./resources/images/contents/@img_menu.png" alt="메뉴 이미지 530*380"></span>
+                              <span class="menu_name">간지치킨</span>
+                              <span class="menu_exp">순살이 맛있는 치킨 순살이 맛있는 치킨</span>
+                              <span class="menu_cost">20,000원</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                              <span class="menu_img"><img src="./resources/images/contents/@img_menu.png" alt="메뉴 이미지 530*380"></span>
+                              <span class="menu_name">간지치킨</span>
+                              <span class="menu_exp">순살이 맛있는 치킨 순살이 맛있는 치킨</span>
+                              <span class="menu_cost">20,000원</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                              <span class="menu_img"><img src="./resources/images/contents/@img_menu.png" alt="메뉴 이미지 530*380"></span>
+                              <span class="menu_name">간지치킨</span>
+                              <span class="menu_exp">순살이 맛있는 치킨 순살이 맛있는 치킨</span>
+                              <span class="menu_cost">20,000원</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                              <span class="menu_img"><img src="./resources/images/contents/@img_menu.png" alt="메뉴 이미지 530*380"></span>
+                              <span class="menu_name">간지치킨</span>
+                              <span class="menu_exp">순살이 맛있는 치킨 순살이 맛있는 치킨</span>
+                              <span class="menu_cost">20,000원</span>
+                            </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="control">
+                    <button type="button" class="btn_prev">
+                      <span class="blind">메인배너 이전배너</span><i>PREV</i>
+                      
+                      <svg width="36" height="85" xmlns="http://www.w3.org/2000/svg" class="line">
+                        <path d="M35 0 Q 35 42 35 83" stroke="gray" stroke-width="1" fill="transparent" style="transition:ease-in 0.5s"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="btn_next">
+                      <span class="blind">메인배너 다음배너</span><i>NEXT</i>
+                      <svg width="36" height="85" xmlns="http://www.w3.org/2000/svg" class="line">
+                        <path d="M0 0 Q 0 42 0 83" stroke="gray" stroke-width="1" fill="transparent" style="transition:ease-in 0.5s"/>
+                      </svg>
+                    </button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_bg_gray">
+            <div class="inner">
+              <div class="main_box_area">
+                <ul>
+                  <li class="box1"><a href="./page/orderDelivery.html">
+                    <i></i>
+                    <strong>주문하기</strong>
+                    <span>배달주문과 포장주문</span>
+                  </a></li>
+                  <li class="box2"><a href="./page/mypageCoupon.html">
+                    <i></i>
+                    <strong>E-쿠폰 주문</strong>
+                    <span>온라인기프트카드 결제</span>
+                  </a></li>
+                  <li class="box3"><a href="./page/store.html">
+                    <i></i>
+                    <strong>가까운 매장</strong>
+                    <span>고객님 주변 매장안내</span>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="main_notice_area">
+                <span>공지</span>
+                <a href="#">폭설로 인한 배달지연 및 배달중지 안내 폭설로 인한 배달 중지 안내</a>
+                <a href="./page/noticeList.html" class="btn_more"><span class="blind">더보기</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer">
+          <div class="inner">
+            <div class="foot_left">
+              <ul class="terms_list">
+                <li><a href="#popTermsFt2" class="ui-pop-open">이용약관</a></li>
+                <li><a href="#popTermsFt3" class="ui-pop-open">개인정보취급방침</a></li>
+              </ul>
+              <div class="foot_info">
+                <p><strong>서울특별시 서초구 매헌로 40㈜장스푸드</strong></p>
+                <p>COPYRIGHT(c) 2017 60CHICHKEN ALL RIGHTS RESERVED</p>
+                <p>고객센터 :080-000-000</p>
+                <p>가맹점문의 02-000-=0000</p>
+              </div>
+            </div>
+            <div class="foot_right">
+              <div class="call_order_area">
+                <strong>call order 1577-9000</strong>12:00-23:00
+              </div>
+              <ul class="sns_list">
+                <li><a href="#"><img src="./resources/images/common/logo_playStore.png" alt="플레이스토어"></a></li>
+                <li><a href="#"><img src="./resources/images/common/logo_appStore.png" alt="앱스토어"></a></li>
+                <li><a href="#"><img src="./resources/images/common/logo_facebook.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="./resources/images/common/logo_instagram.png" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="./resources/images/common/logo_blog.png" alt="블로그"></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <div id="popTermsFt2" class="pop_wrap">
+      <article class="popup pop_terms">
+          <div class="pop_head">
+              <h1 class="fc_pink">이용약관</h1>
+          </div>
+          <div class="pop_cont">
+             <h3>60계치킨 개인정보 처리방침</h3>
+             <textarea name="" id="" class="textarea" readonly title="60계치킨 개인정보 처리방침">
+약관
+             </textarea>
+          </div>
+          <a href="#" class="btn_pop_close ui-pop-close">팝업닫기</a>
+      </article>
+    </div>
+    <div id="popTermsFt3" class="pop_wrap">
+      <article class="popup pop_terms">
+          <div class="pop_head">
+              <h1 class="fc_pink">이용약관</h1>
+          </div>
+          <div class="pop_cont">
+             <h3>60계치킨 개인정보 취급방침</h3>
+             <textarea name="" id="" class="textarea" readonly title="60계치킨 홈페이지 이용약관">
+취급방침
+             </textarea>
+          </div>
+          <a href="#" class="btn_pop_close ui-pop-close">팝업닫기</a>
+      </article>
+    </div>
+</body>
+<script>
+  $(function(){
+    //main_banner_swiper
+    var maninSwiper = new Swiper('.main_banner_wrap .swiper-container', {
+      calculateHeight : true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop : true,
+      pagination: {
+        el: '.pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.main_banner_wrap .btn_next',
+        prevEl: '.main_banner_wrap .btn_prev'
+      },
+    });
+    $(".btn_stop").click(function(){
+      maninSwiper.autoplay.stop();
+      $(this).hide();
+      $(".btn_play").show();
+    });
+    $(".btn_play").click(function(){
+      maninSwiper.autoplay.start();
+      $(this).hide();
+      $(".btn_stop").show();
+    });
+
+    //menu_swipe 
+    var menuSwiper = new Swiper('.menu_area .swiper-container', {
+      calculateHeight : true,
+      slidesPerView: 3,
+      loop : true,
+      navigation: {
+        nextEl: '.main_menu_wrap .btn_next',
+        prevEl: '.main_menu_wrap .btn_prev'
+      },
+    });
+    $('.btn_prev').mouseover(function(){
+        $(this).find('path').attr('d','M35 0 Q 0 42 35 83')
+    })
+    $('.btn_prev').mouseleave(function(){
+        $(this).find('path').attr('d','M35 0 Q 35 42 35 83')
+    })
+    $('.btn_next').mouseover(function(){
+        $(this).find('path').attr('d','M0 0 Q 35 42 0 83')
+    })
+    $('.btn_next').mouseleave(function(){
+        $(this).find('path').attr('d','M0 0 Q 0 42 0 83')
+    })
+    $('.main_box_area ul li').mouseover(function(){
+      $(this).addClass('on').siblings().removeClass('on');
+    })
+    $('.main_box_area ul li').mouseleave(function(){
+      $(this).removeClass('on');
+    })
+  })
+</script>
+</html>

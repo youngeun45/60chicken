@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]> <html class="lt-ie10 lt-ie9 lt-ie8" lang="ko"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ko"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ko"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="ko"> <!--<![endif]-->
+<head>
+<!-- Header doc -->
+<title>60계치킨 pc 코딩리스트</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=1024,user-scalable=no">
+<style>
+#wrap{padding: 1em;min-width:1024px;box-sizing:border-box;padding: 0 100px;box-sizing: border-box;}
+h1{text-align: center;background: #f1f1f1;}
+.box {padding: 1em;border: 1px solid #ccc;margin: 1em 0;}
+.table {width: 100%;border-spacing:0px;border-collapse:collapse;}
+.table th,
+.table td {height: 35px;padding: 5px 10px;font-size: 0.875rem;border: 1px solid #ccc;}
+.table td.tc {text-align-last: center;}
+.table thead th {height: 30px;background: #f1f1f1;}
+.table a {text-decoration: underline;}
+.table .line td {border-top: 3px solid #ccc;}
+.table .top_line td {border-top: 3px solid #ccc;}
+.table tr.finished td{background:#f3ebb7;}
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>60계치킨 PC 코딩리스트</h1>
+		<div class="box">
+			<ul class="txt_list">
+				<li><strong>문서타입</strong> : HTML5 / CSS3</li>
+				<li><strong>jquery 버전</strong> : jquery-1.12.4.min.js</li>
+				<li><strong>공통사항</strong> : </li>
+				<li>header/footer include는 index.html 안의 내용으로 사용부탁드립니다.</li> 
+			</ul>
+		</div>
+		<table class="table">
+			<colgroup>
+				<col style="width: 13%">
+				<col style="width: 13%">
+				<col style="width: 13%">
+				<col style="width: 13%">
+				<col style="width: 20%">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">1뎁스</th>
+					<th scope="col">2뎁스</th>
+					<th scope="col">3뎁스</th>
+					<th scope="col">4뎁스</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">메인</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td><a href="./index.html" target="_blank">./index.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="5">로그인</td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/login.html" target="_blank">./page/login.html</a></td>
+					<td>비밀번호 변경 권유 팝업 포함</td>
+				</tr>
+				<tr>
+					<td>아이디 찾기</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/findId.html" target="_blank">./page/findId.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">비밀번호 찾기</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/findPw.html" target="_blank">./page/findPw.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>비밀번호 변경</td>
+					<td></td>
+					<td><a href="./page/changePw.html" target="_blank">./page/changePw.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>휴면계정 관리안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/inactiveAccount.html" target="_blank">./page/inactiveAccount.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="2">비회원 페이지</td>
+					<td>비회원 로그인</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/loginNonMember.html" target="_blank">./page/loginNonMember.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>비회원 주문조회</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/nonMemberOrder.html" target="_blank">./page/nonMemberOrder.html</a></td>
+					<td>주문상세내역 팝업 포함</td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="2">회원가입</td>
+					<td>약관동의</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/join1.html" target="_blank">./page/join1.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>정보입력</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/join2.html" target="_blank">./page/join2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="11">마이페이지</td>
+					<td>주문내역</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/mypageOrder.html" target="_blank">./page/mypageOrder.html</a></td>
+					<td>주문상세내역 팝업 포함</td>
+				</tr>
+				<tr>
+					<td rowspan="4">고객 정보 수정</td>
+					<td>비밀번호확인</td>
+					<td></td>
+					<td><a href="./page/mypageLock.html" target="_blank">./page/mypageLock.html</a></td>
+					<td>마이페이지 - 비밀번호 변경 클릭시 노출되는 lock 화면 동일사용</td>
+				</tr>
+				<tr>
+					<td rowspan="2">고객 정보 수정</td>
+					<td></td>
+					<td><a href="./page/mypageEditInfo.html" target="_blank">./page/mypageEditInfo.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>회원탈퇴</td>
+					<td><a href="./page/mypageQuit.html" target="_blank">./page/mypageQuit.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>비밀번호 변경</td>
+					<td></td>
+					<td><a href="./page/mypageChangePw.html" target="_blank">./page/mypageChangePw.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="3">문의내역</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="./page/mypageQnaList.html" target="_blank">./page/mypageQnaList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>보기상세</td>
+					<td></td>
+					<td><a href="./page/mypageQnaView.html" target="_blank">./page/mypageQnaView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>쓰기</td>
+					<td></td>
+					<td><a href="./page/mypageQnaWrite.html" target="_blank">./page/mypageQnaWrite.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>배달지 관리</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/mypageDelivery.html" target="_blank">./page/mypageDelivery.html</a></td>
+					<td>배달지 등록 팝업 포함</td>
+				</tr>
+				<tr>
+					<td>퀵오더</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/mypageQuickOrder.html" target="_blank">./page/mypageQuickOrder.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>나의 혜택</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/mypageCoupon.html" target="_blank">./page/mypageCoupon.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="5">온라인주문</td>
+					<td rowspan="2">배달지선택</td>
+					<td>배달주문</td>
+					<td></td>
+					<td><a href="./page/orderDelivery.html" target="_blank">./page/orderDelivery.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>포장주문</td>
+					<td></td>
+					<td><a href="./page/orderPacking.html" target="_blank">./page/orderPacking.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>장바구니</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/cart.html" target="_blank">./page/cart.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>결제하기</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/payment.html" target="_blank">./page/payment.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>주문완료</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/orderComplete.html" target="_blank">./page/orderComplete.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">E쿠폰</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/eCoupon.html" target="_blank">./page/eCoupon.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">스토어</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/store.html" target="_blank">./page/store.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td  class="tc" rowspan="2">프로모션</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/eventList.html" target="_blank">./page/eventList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/eventView.html" target="_blank">./page/eventView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td  class="tc" rowspan="4">커뮤니케이션</td>
+					<td>공지사항 리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/noticeList.html" target="_blank">./page/noticeList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>공지사항 뉴스 상세보기</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/noticeView.html" target="_blank">./page/noticeView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>뉴스 리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/newsList.html" target="_blank">./page/newsList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>FAQ</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/faq.html" target="_blank">./page/faq.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td  class="tc" rowspan="3">메뉴</td>
+					<td>메뉴 리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/menuList.html" target="_blank">./page/menuList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>메뉴 상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/menuView.html" target="_blank">./page/menuView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>메뉴 상세2</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/menuViewHalf.html" target="_blank">./page/menuViewHalf.html</a></td>
+					<td>반반치킨</td>
+				</tr>
+            </tbody>
+        </table>
+  </div>
+</body>
+</html>
