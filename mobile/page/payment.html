@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>60계치킨</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all" />
+<link rel="stylesheet" href="../resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-3.3.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5shiv.3.7.3.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#container">본문 바로가기</a>
+            <a href="#gnb">주메뉴 바로가기</a>
+        </div>
+        <header id="header">
+            <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+            <h1>결제정보 입력</h1>
+            <!-- <a href="cart.html" class="btn_cart"><span class="blind">장바구니</span><i>10</i></a> -->
+        </header>
+        <header id="headerBottom">
+            <ul>
+                <li class="home"><a href="../index.html">홈</a></li>
+                <li class="category"><a href="#" class="open-side-menu">카테고리</a></li>
+                <li class="ecoupon"><a href="../page/eCoupon.html">E-Coupon</a></li>
+                <li class="mypage"><a href="../page/mypageMember.html">마이페이지</a></li>
+            </ul>
+            <div class="side_wrap">
+                <div>
+                    <div class="logo_area"><a href="../index.html"><img src="../resources/images/common/logo.png" alt="로고"></a></div>
+                    <!-- 로그인 전(비회원) -->
+                    <div class="non_member_area">
+                        <ul>
+                            <li><a href="./login.html"><i></i>로그인</a></li>
+                            <li><a href="./join1.html"><i></i>회원가입</a></li>
+                        </ul>
+                    </div>
+                    <!-- 로그인 후(회원) -->
+                    <!-- <div class="member_area">
+                        <ul>
+                            <li><a href="mypageMember.html.html"><i></i>마이페이지</a></li>
+                            <li><a href="#"><i></i>로그아웃</a></li>
+                        </ul>
+                    </div> -->
+                    <nav id="gnb">
+                        <ul>
+                            <li class="gnb_menu"><a href="./menuList.html"><img src="../resources/images/common/ico_gnb_menu.png" alt="전체메뉴"><span>전체메뉴</span></a></li>
+                            <li class="gnb_ecoupon"><a href="./eCoupon.html"><img src="../resources/images/common/ico_gnb_ecoupon.png" alt="E-쿠폰 주문"><span>E-쿠폰 주문</span></a></li>
+                            <li class="gnb_store"><a href="./store.html"><img src="../resources/images/common/ico_gnb_store.png" alt="스토어"><span>스토어</span></a></li>
+                            <li class="gnb_promotion"><a href="./eventList.html"><img src="../resources/images/common/ico_gnb_promotion.png" alt="프로모션"><span>프로모션</span></a></li>
+                            <li class="gnb_communication"><a href="./noticeList.html"><img src="../resources/images/common/ico_gnb_communication.png" alt="커뮤니케이션"><span>커뮤니케이션</span></a></li>
+                        </ul>
+                    </nav>
+                    <p class="side_call_no">전화주문 1566-3366</p>
+                    <div class="promotion_banner">
+                        <a href="#"><img src="../resources/images/contents/@img_gnb_banner.jpg"  width="100%" alt="gnb배너 이미지"></a>
+                    </div>
+                    <div class="side_terms">
+                        <ul>
+                            <li><a href="#" class="pop_open">개인정보취급방침</a></li>
+                            <li><a href="#" class="pop_open">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn_side_close close-side-menu"><span class="blind">좌측메뉴닫기</span></button>
+            </div>
+        </header>
+        <div id="container">
+            <div class="inner">
+                <div class="payment_wrap">
+                    <div class="tit_area">
+                        <h3><span class="fc_pink">결제하기</span></h3>
+                        <h4>고객 정보</h4>
+                        <p>원활한 주문을 위해 받으시는 분의 정확한 정보를 입력해주세요.</p>
+                    </div>
+                    <section>
+                        <h4 class="blind">고객정보입력</h4>
+                        <div class="inp_area">
+                            <div>
+                                <p>이름</p>
+                                <input type="text" class="input w_100" value="홍길동" title="이름입력">
+                            </div>
+                            <div class="btn_area">
+                                <p>휴대폰 번호</p>
+                                <input type="text" class="input w_100" placeholder="'-'구분없이 입력" title="휴대폰 번호 '-'구분없이 입력" value="홍길동"><button type="button" class="button">인증번호</button>
+                            </div>
+                            <div class="btn_area">
+                                <p>인증번호</p>
+                                <input type="text" class="input w_100" placeholder="인증번호 입력" title="인증번호 입력"><button type="button" class="button">인증하기</button>
+                            </div>
+                            <div>
+                                <p>요청사항</p>
+                                <input type="text" class="input w_100" title="요창사항">
+                            </div>
+                        </div>
+                        <div class="link_area">
+                            <span>홈페이지 이용약관(필수)</span>
+                            <em>
+                                <label class="checkbox">
+                                    <input type="checkbox" id="popTerms3Agree">
+                                    <i></i>
+                                </label>
+                                <a href="#popTerms3" class="ui-pop-open">약관보기</a>
+                            </em>
+                        </div>
+                    </section>
+                    <section class="sec_order_list">
+                        <h4>주문내역</h4>
+                        <div class="payment_order_list">
+                            <a href="cart.html" class="button">제품변경</a>
+                            <table>
+                                <caption>주문내역</caption>
+                                <colgroup>
+                                    <col>
+                                    <col style="width: 15%;">
+                                    <col style="width: 35%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="menu">
+                                        <td class="t_left">반반후라이드 반반후라이드 반반후라이드</td>
+                                        <td class="t_center">99개</td>
+                                        <td class="t_right">999,000원</td>
+                                    </tr>
+                                    <tr class="opt">
+                                        <td class="t_left" colspan="2"><span>맛선택 매운맛/짜장맛</span></td>
+                                        <td class="t_right"><span>1,000원</span></td>
+                                    </tr>
+                                    <tr class="opt">
+                                        <td class="t_left" colspan="2"><span>다른옵션 옵션값</span></td>
+                                        <td class="t_right"><span>2,000원</span></td>
+                                    </tr>
+                                    <tr class="menu">
+                                        <td class="t_left">콜라 [대]</td>
+                                        <td class="t_center">99개</td>
+                                        <td class="t_right">2,500원</td>
+                                    </tr>
+                                    <tr class="menu">
+                                        <td class="t_left">샐러드</td>
+                                        <td class="t_center">99개</td>
+                                        <td class="t_right">2,500원</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row" class="t_left" colspan="2">합계</th>
+                                        <td class="t_right"><strong>18,900원</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>도착 예정시간</h4>
+                        <div class="payment_arrive_time">
+                            <table>
+                                <caption>도착예정시간</caption>
+                                <colgroup>
+                                    <col style="width: 90px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="t_left">배달정보</th>
+                                        <td><p>[증산점]02-999-3333</p>[ 집 ] 서울시 은평구 증산동 251 서울시 은평구 증산동 251</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="t_left">도착예정시간</th>
+                                        <td>
+                                            <div>
+                                                <label class="radio_btn_switch">
+                                                    <input type="radio" name="reservation" checked>
+                                                    <span class="lbl">바로주문</span>
+                                                </label>
+                                                <label class="radio_btn_switch">
+                                                    <input type="radio" name="reservation" id="reO">
+                                                    <span class="lbl">예약주문</span>
+                                                </label>
+                                            </div>
+                                            <div class="reserve_time_area">
+                                                <select name="" id="" class="select" title="예약 시간 시 선택">
+                                                    <option value="">시</option>
+                                                    <option value="">10시</option>
+                                                </select>
+                                                <select name="" id="" class="select" title="예약 시간 분 선택">
+                                                    <option value="">분</option>
+                                                    <option value="">59분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="t_left">배달소요시간</th>
+                                        <td><p>60~75분</p> <em>(매장 상황에 따라 지연될 수 있습니다)</em></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="sec_last">
+                        <h4>결제수단 선택</h4>
+                        <div class="payment_method">
+                            <table>
+                                <caption>결제수단 선택</caption>
+                                <colgroup>
+                                    <col style="width: 90px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="t_left">선결제</th>
+                                        <td>
+                                            <label class="radio">
+                                                <input type="radio" name="paymentM">
+                                                <i></i>
+                                                <span class="lbl">신용카드</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="paymentM">
+                                                <i></i>
+                                                <span class="lbl">페이코인</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="paymentM" id="eCoupon">
+                                                <i></i>
+                                                <span class="lbl">E-COUPON</span>
+                                            </label>
+                                            <div class="cash t_right">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="cashRe">
+                                                    <i></i>
+                                                    <span class="lbl">현금영수증</span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="t_left">총 주문금액</th>
+                                        <td class="t_right">18,900원</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row" class="t_left">합계</th>
+                                        <td class="t_right"><strong>18,900원</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                    <button type="button" class="button w_100">주문하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div id="popTerms3" class="pop_wrap">
+    <article class="popup pop_terms">
+        <div class="pop_head">
+            <h1 class="fc_pink">이용약관</h1>
+        </div>
+        <div class="pop_cont">
+           <h4>60계치킨 홈페이지 이용약관</h4>
+           <textarea name="" id="" class="textarea" readonly title="60계치킨 홈페이지 이용약관">
+약관
+           </textarea>
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="button w_100 h63 btn-agree">동의</button>
+        </div>
+    </article>
+</div>
+<script>
+    $(function(){
+        //btn-agree
+        $('.btn-agree').click(function(){
+            var $id = $(this).closest('.pop_wrap').attr('id'),
+                $pop = '#' + $id,
+                $chkbox = '#' + $id + 'Agree';
+               if(!$($chkbox).is(':checked')){
+                    $($chkbox).prop('checked', 'checked');
+               }
+            popClose($pop)
+        })
+        //reservation-time show/hide
+        $('input[name="reservation"]').change(function(){
+            if($('#reO').is(':checked')){
+                $('.reserve_time_area').show();
+            }else{
+                $('.reserve_time_area').hide();
+            }
+        })
+        //cash-receipts show/hide
+        $('input[name="paymentM"]').change(function(){
+            if($('#eCoupon').is(':checked')){
+                $('.cash').show();
+            }else{
+                $('.cash').hide();
+                $('input[name="cashRe"]').prop('checked',false)
+            }
+        })
+    })
+</script>
+</html>

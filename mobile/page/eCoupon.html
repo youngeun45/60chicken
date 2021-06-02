@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>60계치킨</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all" />
+<link rel="stylesheet" href="../resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-3.3.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5shiv.3.7.3.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#container">본문 바로가기</a>
+            <a href="#gnb">주메뉴 바로가기</a>
+        </div>
+        <header id="header">
+            <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+            <h1>E쿠폰</h1>
+            <a href="cart.html" class="btn_cart"><span class="blind">장바구니</span><i>10</i></a>
+        </header>
+        <header id="headerBottom">
+            <ul>
+                <li class="home"><a href="../index.html">홈</a></li>
+                <li class="category"><a href="#" class="open-side-menu">카테고리</a></li>
+                <li class="ecoupon"><a href="../page/eCoupon.html">E-Coupon</a></li>
+                <li class="mypage"><a href="../page/mypageMember.html">마이페이지</a></li>
+            </ul>
+            <div class="side_wrap">
+                <div>
+                    <div class="logo_area"><a href="../index.html"><img src="../resources/images/common/logo.png" alt="로고"></a></div>
+                    <!-- 로그인 전(비회원) -->
+                    <div class="non_member_area">
+                        <ul>
+                            <li><a href="./login.html"><i></i>로그인</a></li>
+                            <li><a href="./join1.html"><i></i>회원가입</a></li>
+                        </ul>
+                    </div>
+                    <!-- 로그인 후(회원) -->
+                    <!-- <div class="member_area">
+                        <ul>
+                            <li><a href="mypageMember.html.html"><i></i>마이페이지</a></li>
+                            <li><a href="#"><i></i>로그아웃</a></li>
+                        </ul>
+                    </div> -->
+                    <nav id="gnb">
+                        <ul>
+                            <li class="gnb_menu"><a href="./menuList.html"><img src="../resources/images/common/ico_gnb_menu.png" alt="전체메뉴"><span>전체메뉴</span></a></li>
+                            <li class="gnb_ecoupon"><a href="./eCoupon.html"><img src="../resources/images/common/ico_gnb_ecoupon.png" alt="E-쿠폰 주문"><span>E-쿠폰 주문</span></a></li>
+                            <li class="gnb_store"><a href="./store.html"><img src="../resources/images/common/ico_gnb_store.png" alt="스토어"><span>스토어</span></a></li>
+                            <li class="gnb_promotion"><a href="./eventList.html"><img src="../resources/images/common/ico_gnb_promotion.png" alt="프로모션"><span>프로모션</span></a></li>
+                            <li class="gnb_communication"><a href="./noticeList.html"><img src="../resources/images/common/ico_gnb_communication.png" alt="커뮤니케이션"><span>커뮤니케이션</span></a></li>
+                        </ul>
+                    </nav>
+                    <p class="side_call_no">전화주문 1566-3366</p>
+                    <div class="promotion_banner">
+                        <a href="#"><img src="../resources/images/contents/@img_gnb_banner.jpg"  width="100%" alt="gnb배너 이미지"></a>
+                    </div>
+                    <div class="side_terms">
+                        <ul>
+                            <li><a href="#" class="pop_open">개인정보취급방침</a></li>
+                            <li><a href="#" class="pop_open">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn_side_close close-side-menu"><span class="blind">좌측메뉴닫기</span></button>
+            </div>
+        </header>
+        <div id="container">
+            <div class="inner">
+                <div class="ecoupon_wrap">
+                    <div class="tit_area">
+                        <h3>E쿠폰주문</h3>
+                    </div>
+                    <h5>E쿠폰 유의사항</h5>
+                    <ul class="txt_list">
+                        <li>주문 1건당 1장만 사용이 가능하며 다른 제품 추가가 불가합니다.</li>
+                        <li>E쿠폰 사용 시 다른 제휴 할인 중복 불가능합니다.</li>
+                        <li>E쿠폰 유효기간 내에만 사용이 가능합니다.</li>
+                    </ul>
+                    <div class="inp_area">
+                        <input type="text" class="input w_100" placeholder="E쿠폰 번호 입력" title="E쿠폰 번호 입력">
+                        <button type="button" class="button">조회</button>
+                    </div>
+                    <div class="ecoupon_area">
+                        <strong>E COUPON</strong>
+                        <div><p>치즈후라이 크림치즈L + 콜라 1.25L 치즈후라이 크림치즈L + 콜라 1.25L</p></div>
+                        <!-- <div class="empty"><p>구매하신 쿠폰 번호를 조회할 수 있습니다</p></div> -->
+                    </div>
+                    <button type="button" class="button w_100">담기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>

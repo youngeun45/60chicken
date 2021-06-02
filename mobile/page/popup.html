@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>60계치킨</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all" />
+<link rel="stylesheet" href="../resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-3.3.0.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5shiv.3.7.3.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#container">본문 바로가기</a>
+            <a href="#gnb">주메뉴 바로가기</a>
+        </div>
+        <header id="header">
+            <button type="button" class="btn_back" onclick="history.go(-1)"><span class="blind">뒤로가기</span></button>
+            <h1>팝업가이드</h1>
+            <a href="cart.html" class="btn_cart"><span class="blind">장바구니</span><i>10</i></a>
+        </header>
+        <header id="headerBottom">
+            <ul>
+                <li class="home"><a href="../index.html">홈</a></li>
+                <li class="category"><a href="#" class="open-side-menu">카테고리</a></li>
+                <li class="ecoupon"><a href="../page/eCoupon.html">E-Coupon</a></li>
+                <li class="mypage"><a href="../page/mypageMember.html">마이페이지</a></li>
+            </ul>
+            <div class="side_wrap">
+                <div>
+                    <div class="logo_area"><a href="../index.html"><img src="../resources/images/common/logo.png" alt="로고"></a></div>
+                    <!-- 로그인 전(비회원) -->
+                    <div class="non_member_area">
+                        <ul>
+                            <li><a href="./login.html"><i></i>로그인</a></li>
+                            <li><a href="./join1.html"><i></i>회원가입</a></li>
+                        </ul>
+                    </div>
+                    <!-- 로그인 후(회원) -->
+                    <!-- <div class="member_area">
+                        <ul>
+                            <li><a href="mypageMember.html.html"><i></i>마이페이지</a></li>
+                            <li><a href="#"><i></i>로그아웃</a></li>
+                        </ul>
+                    </div> -->
+                    <nav id="gnb">
+                        <ul>
+                            <li class="gnb_menu"><a href="./menuList.html"><img src="../resources/images/common/ico_gnb_menu.png" alt="전체메뉴"><span>전체메뉴</span></a></li>
+                            <li class="gnb_ecoupon"><a href="./eCoupon.html"><img src="../resources/images/common/ico_gnb_ecoupon.png" alt="E-쿠폰 주문"><span>E-쿠폰 주문</span></a></li>
+                            <li class="gnb_store"><a href="./store.html"><img src="../resources/images/common/ico_gnb_store.png" alt="스토어"><span>스토어</span></a></li>
+                            <li class="gnb_promotion"><a href="./eventList.html"><img src="../resources/images/common/ico_gnb_promotion.png" alt="프로모션"><span>프로모션</span></a></li>
+                            <li class="gnb_communication"><a href="./noticeList.html"><img src="../resources/images/common/ico_gnb_communication.png" alt="커뮤니케이션"><span>커뮤니케이션</span></a></li>
+                        </ul>
+                    </nav>
+                    <p class="side_call_no">전화주문 1566-3366</p>
+                    <div class="promotion_banner">
+                        <a href="#"><img src="../resources/images/contents/@img_gnb_banner.jpg"  width="100%" alt="gnb배너 이미지"></a>
+                    </div>
+                    <div class="side_terms">
+                        <ul>
+                            <li><a href="#" class="pop_open">개인정보취급방침</a></li>
+                            <li><a href="#" class="pop_open">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn_side_close close-side-menu"><span class="blind">좌측메뉴닫기</span></button>
+            </div>
+        </header>
+        <div id="container">
+            <div class="inner">
+                <div style="padding: 40px 0">
+                    <h4 class="fc_pink mb10">팝업 호출</h4>
+                    <p class="mb5"><strong>1. a태그를 사용하여 href에 대상 팝업의 id 지정</strong></p>
+                    <p>
+                        <a href="#popPwChange" class="button ui-pop-open">비밀번호 변경 권유 팝업</a><br> 
+                        &lt;a href="#popPwChange" class="button ui-pop-open"&gt;버튼&lt;/a&gt
+                        
+                    </p><br>
+                    <p class="mb5"><strong>2. 함수사용 <br>popOpen(대상 팝업의 id) </strong></p>
+                    <p><button type="button" class="button" onclick="popOpen('#popPwChange')">비밀번호 변경 권유 팝업</button> <br>
+                        &lt;button class="button" onclick="popOpen('#popPwChange')"&gt;버튼&lt;/button&gt;</p>
+                    <h4 class="fc_pink mb10 mt30">팝업 닫기</h4>
+                    <p><strong> 1. 대상 팝업의 id  내에 .ui-pop-close 클래스의 버튼으로 닫기</strong> <br> &lt;button class="button ui-pop-open"&gt;버튼&lt;/button&gt; </p><br>
+                    <p><strong> 2. popClose(대상 팝업의 id)</strong><br>&lt;button class="button" onclick="popClose('#popPwChange')"&gt;버튼&lt;/button&gt;</p><br><br>
+                    <h4 class="fc_pink mb10">일반 알럿 호출</h4>
+                    <p class="mb5"><strong>getAlert(알럿메세지)</strong></p>
+                    <button type="button" class="button" onclick="getAlert('사이드메뉴는 9개까지 구매가능 합니다')">알럿팝업</button> <br>
+                    &lt;button class="button" onclick="getAlert('사이드메뉴는 9개까지 구매가능 합니다')"&gt;버튼&lt;/button&gt;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div id="popPwChange" class="pop_wrap">
+    <article class="popup pop_pw">
+        <div class="pop_head">
+            <h1 class="fc_pink">알림</h1>
+        </div>
+        <div class="pop_cont">
+            고객님의 개인정보를 위해<br>3개월마다 비밀번호 변경을 권유하고 있습니다.<br><br>비밀번호 변경을 원치 않으시는 경우<br>1개월 후 변경 버튼을 클릭해주세요.
+            <div class="inp_area">
+                <p><input type="password" class="input w_100 inp_border" placeholder="현재 비밀번호" title="현재 비밀번호"></p>
+                <p><input type="password" class="input w_100 inp_border" placeholder="영문, 숫자 8~20자" title="영문, 숫자 8~20자"></p>
+                <p><input type="password" class="input w_100 inp_border" placeholder="새 비밀번호 확인" title="새 비밀번호 확인"></p>
+            </div>
+        </div>
+        <div class="pop_btn btn2">
+            <button type="button" class="button h63 btn_pk_white">1개월 후 변경</button>
+            <button type="button" class="button h63">수정</button>
+        </div>
+        <a href="#" class="btn_pop_close ui-pop-close">팝업닫기</a>
+    </article>
+</div>
+<div id="popAlert" class="pop_wrap">
+    <article class="popup pop_alert">
+        <div class="pop_cont">
+            <div id="alertMessage"></div>
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="button h63 w_100" onclick="popClose('#popAlert')">확인</button>
+        </div>
+    </article>
+</div>
+<div id="popCart" class="pop_wrap">
+    <article class="popup pop_alert">
+        <div class="pop_cont">
+            장바구니에 제품을 담았습니다. 장바구니로 이동하시겠습니까?
+        </div>
+        <div class="pop_btn btn2">
+            <button type="button" class="button h63 btn_pk_white" onclick="popClose('#popCart')">아니오</button>
+            <a href="./cart.html" class="button h63">이동</a>
+        </div>
+    </article>
+</div>
+<div id="popSide" class="pop_wrap">
+    <article class="popup pop_side">
+        <div class="pop_cont">
+            <p class="txt">사이드메뉴는 <span class="fc_pink">9개까지 구매가능</span> 합니다</p>
+        </div>
+        <div class="pop_btn">
+            <button type="button" class="button h63 w_100" onclick="popClose('#popSide')">확인</button>
+        </div>
+    </article>
+</div>
+<script>
+function getAlert(msg){
+        $("#alertMessage").html(msg);
+        popOpen('#popAlert');
+    }
+</script>
+</html>
